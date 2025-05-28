@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_grey"
+    android:padding="8dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp" />
+
+    <!-- Journal entry cards / Empty List message-->
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/empty_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+        android:textSize="25sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:visibility="gone"
+            android:layout_marginTop="-80dp"/>
+
+        <!-- Add Fragment Button -->
+        <Button
+            android:id="@+id/btn_add_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Journal Entry"
+            android:visibility="gone"
+            android:background="@drawable/button_styling_light"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+    </FrameLayout>
+</LinearLayout>

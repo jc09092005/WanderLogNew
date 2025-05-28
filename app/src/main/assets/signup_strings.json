@@ -1,0 +1,10 @@
+{
+  "signup_title" : "Sign Up",
+  "username_hint" : "Username",
+  "email_hint" : "Email Address",
+  "password_hint" : "Password",
+  "confirm_pass_hint" : "Confirm Password",
+  "signup_button" : "Sign Up",
+  "account_already" : "Have an account already?",
+  "login_button" : "Log In"
+}

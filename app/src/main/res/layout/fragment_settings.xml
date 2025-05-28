@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title label -->
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"/>
+
+        <!-- App Settings label -->
+        <TextView
+            android:id="@+id/settings_app_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp">
+
+            <!-- Language label -->
+            <TextView
+                android:id="@+id/settings_language_label"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:scrollbarSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <!-- Account Settings label -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/settings_account_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="60dp"/>
+
+        <Button
+            android:id="@+id/btn_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_styling_light"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_delete_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_styling_light"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_styling_light"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</ScrollView>

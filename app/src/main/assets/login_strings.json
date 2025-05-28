@@ -1,0 +1,10 @@
+{
+  "title" : "Wanderlog",
+  "subtitle" : "Begin Your Adventure, Write Your Story",
+  "log_in" : "Log In",
+  "username_hint" : "Username",
+  "password_hint" : "Password",
+  "login_button" : "Log In",
+  "no_account" : "Don't have an account?",
+  "signin_button" : "Sign Up"
+}

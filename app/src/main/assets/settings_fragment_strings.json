@@ -1,0 +1,12 @@
+{
+  "settings_title" : "Settings",
+  "app_settings" : "App Settings",
+  "language" : "Language",
+  "dark_mode" : "Dark Mode",
+  "account_settings" : "Account Settings",
+  "change_pass_btn" : "Change Password",
+  "delete_acc_btn" : "Delete Account",
+  "log_out_btn" : "Log Out",
+  "confirm_logout" : "Are you sure you want to log out?",
+  "confirm_delete" : "Are you sure you want to delete your account? This action cannot be reversed"
+}

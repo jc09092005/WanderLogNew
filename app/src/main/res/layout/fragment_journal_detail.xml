@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/journal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/journal_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerInside"
+                android:background="@color/light_grey"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Country Section -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/globe_icon"
+                    android:color="@color/main_blue"/>
+
+                <TextView
+                    android:id="@+id/journal_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Date Section -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/date_icon" />
+
+                <TextView
+                    android:id="@+id/journal_dates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Description Label (loaded from JSON) -->
+            <TextView
+                android:id="@+id/journal_description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/journal_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- Buttons Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Delete Button (loaded from JSON) -->
+            <Button
+                android:id="@+id/btn_back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_styling_light"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_styling_red"
+                android:backgroundTint="#D31D1D"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

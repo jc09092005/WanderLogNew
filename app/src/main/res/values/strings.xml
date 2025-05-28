@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WanderLog</string>
+
+    <string-array name="language_options">
+        <item >English</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+    </string-array>
+</resources>

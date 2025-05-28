@@ -1,0 +1,14 @@
+{
+  "add_title" : "New Journal Entry",
+  "upload_img_btn" : "Upload Image",
+  "title_title" : "Title",
+  "title_hint" : "Title",
+  "country_title" : "Country",
+  "country_hint" : "Country",
+  "date_range_title" : "Date Range",
+  "start_hint" : "Start Date",
+  "end_hint" : "End Date",
+  "description_title" : "Description",
+  "description_hint" : "Description",
+  "save_btn" : "Save"
+}

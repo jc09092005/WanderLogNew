@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:padding="16sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Cover Image -->
+        <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="400dp"
+            android:layout_height="220dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/rounded_textinput"
+            android:src="@drawable/image_icon2"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Upload Image Button -->
+        <Button
+            android:id="@+id/btn_upload_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_styling_light" />
+
+
+        <!-- Journal Title label -->
+        <TextView
+            android:id="@+id/add_journal_title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Journal Title input -->
+        <EditText
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:maxLength="30"
+            android:paddingStart="10dp"
+            android:background="@drawable/rounded_textinput"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Country label -->
+        <TextView
+            android:id="@+id/add_country_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Country input (AutoComplete) -->
+        <AutoCompleteTextView
+            android:id="@+id/input_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/rounded_textinput"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Date Range label -->
+        <TextView
+            android:id="@+id/add_date_range_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Start + End date fields in a row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/input_start_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@drawable/rounded_textinput"
+                android:padding="10dp" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/input_end_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:background="@drawable/rounded_textinput"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <!-- Error message -->
+        <TextView
+            android:id="@+id/error_date_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Description label -->
+        <TextView
+            android:id="@+id/add_description_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Description input -->
+        <EditText
+            android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:maxLines="20"
+            android:gravity="top|start"
+            android:background="@drawable/rounded_textinput"
+            android:scrollbars="vertical"
+            android:overScrollMode="always"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Save button -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/button_styling_light"
+            android:backgroundTint="@color/light_grey"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="10dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</ScrollView>
